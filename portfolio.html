@@ -5,46 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Event Studio (AU)</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <!-- Header -->
-    <header class="hero">
-        <div class="hero-content">
+    <header class="hero bg-dark text-white text-center py-5">
+        <div class="container" data-aos="fade-up">
             <h1>Our Portfolio</h1>
             <p>Explore our best work across various events.</p>
         </div>
     </header>
 
     <!-- Portfolio Gallery -->
-    <section class="portfolio-gallery">
-        <h2>Categories</h2>
-        <div class="filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="weddings">Weddings</button>
-            <button class="filter-btn" data-filter="corporate">Corporate</button>
-            <button class="filter-btn" data-filter="parties">Parties</button>
-        </div>
-        <div class="gallery">
-            <div class="item weddings"><img src="images/wedding1.jpg" alt="Wedding Photo"></div>
-            <div class="item corporate"><img src="images/corporate1.jpg" alt="Corporate Photo"></div>
-            <div class="item parties"><img src="images/party1.jpg" alt="Party Photo"></div>
-            <div class="item weddings"><img src="images/wedding2.jpg" alt="Wedding Photo"></div>
-            <div class="item corporate"><img src="images/corporate2.jpg" alt="Corporate Photo"></div>
-            <div class="item parties"><img src="images/party2.jpg" alt="Party Photo"></div>
+    <section class="portfolio-gallery py-5" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-4">Categories</h2>
+            <div class="filters d-flex justify-content-center mb-4">
+                <button class="filter-btn active btn btn-outline-secondary me-2" data-filter="all">All</button>
+                <button class="filter-btn btn btn-outline-secondary me-2" data-filter="weddings">Weddings</button>
+                <button class="filter-btn btn btn-outline-secondary me-2" data-filter="corporate">Corporate</button>
+                <button class="filter-btn btn btn-outline-secondary" data-filter="parties">Parties</button>
+            </div>
+            <div class="gallery row">
+                <div class="col-md-4 item weddings">
+                    <a href="images/wedding1.jpg" data-lightbox="gallery" data-title="Wedding Photo">
+                        <img src="images/wedding1.jpg" alt="Wedding Photo" class="img-fluid rounded shadow">
+                    </a>
+                </div>
+                <div class="col-md-4 item corporate">
+                    <a href="images/corporate1.jpg" data-lightbox="gallery" data-title="Corporate Photo">
+                        <img src="images/corporate1.jpg" alt="Corporate Photo" class="img-fluid rounded shadow">
+                    </a>
+                </div>
+                <div class="col-md-4 item parties">
+                    <a href="images/party1.jpg" data-lightbox="gallery" data-title="Party Photo">
+                        <img src="images/party1.jpg" alt="Party Photo" class="img-fluid rounded shadow">
+                    </a>
+                </div>
+                <div class="col-md-4 item weddings">
+                    <a href="images/wedding2.jpg" data-lightbox="gallery" data-title="Wedding Photo">
+                        <img src="images/wedding2.jpg" alt="Wedding Photo" class="img-fluid rounded shadow">
+                    </a>
+                </div>
+                <div class="col-md-4 item corporate">
+                    <a href="images/corporate2.jpg" data-lightbox="gallery" data-title="Corporate Photo">
+                        <img src="images/corporate2.jpg" alt="Corporate Photo" class="img-fluid rounded shadow">
+                    </a>
+                </div>
+                <div class="col-md-4 item parties">
+                    <a href="images/party2.jpg" data-lightbox="gallery" data-title="Party Photo">
+                        <img src="images/party2.jpg" alt="Party Photo" class="img-fluid rounded shadow">
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="bg-dark text-white text-center py-4">
         <p>&copy; 2023 Event Studio (AU). All rights reserved.</p>
         <div class="social-links">
-            <a href="https://instagram.com/EventStudioAU" target="_blank">Instagram</a>
-            <a href="mailto:contact@eventstudioau.com">Email</a>
+            <a href="https://instagram.com/EventStudioAU" target="_blank" class="text-white me-3">Instagram</a>
+            <a href="mailto:contact@eventstudioau.com" class="text-white">Email</a>
         </div>
     </footer>
 
+    <!-- Bootstrap JS (with Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <!-- Custom JS -->
     <script src="js/script.js"></script>
 </body>
 

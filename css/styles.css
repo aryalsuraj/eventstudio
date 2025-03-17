@@ -1,56 +1,13 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
+/* Custom Styles */
 .hero {
     background: url('images/hero.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 150px 20px;
+    min-height: 100vh;
 }
 
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+.gallery img {
+    transition: transform 0.3s ease;
 }
 
-.hero p {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.btn {
-    background: #ff6f61;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 0 10px;
-}
-
-.about,
-.featured-work,
-.portfolio-gallery,
-.contact-form,
-.login-form {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.gallery img,
-.feed img {
-    width: 30%;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.gallery img:hover {
+    transform: scale(1.1);
 }
